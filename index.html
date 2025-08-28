@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Page</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Welcome to My Web Page</h1>
+        <nav>
+            <a href="Home">Home</a>
+            |
+            <a href="Staff">Staff</a>
+            |
+            <a href="Students">Student</a>
+            |
+            <a href="Alumni">Alumni</a>
+            |
+            <a href="Apply">Apply</a>
+
+            <input type="text" id="" placeholder="what can we help you find">
+
+            <button type="search-bar">Search</button>
+        </nav>
+        <p>This page demonstrates the use of lists, tables, media, and an accessible HTML5 form with validation.</p>
+    </header>
+
+    <section>
+        <h2>Popular Web Technologies</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+
+        <h3>Steps to Build a Simple Web Page</h3>
+        <ol type="A">
+            <li>Plan your content</li>
+            <li>Write semantic HTML structure</li>
+            <li>Style with CSS</li>
+            <li>Test for accessibility and responsiveness</li>
+        </ol>
+    </section>
+
+
+    <section>
+        <table border="1">
+            <h2>Course Schedule</h2>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Course</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML & CSS Basics</td>
+                    <td>10:00 AM - 12:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>JavaScript Essentials</td>
+                    <td>2:00 PM - 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Python for Web</td>
+                    <td>9:00 AM - 11:00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Featured Media</h2>
+        <p>Watch this short HTML5 introduction video:</p>
+        <video controls width="450" heiht="360">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <p>Listen to a podcast snippet about web development:</p>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>
+                    <h4>Personal Information</h4>
+                </legend>
+
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Obadiah" required minlength="3">
+                <lable for="" middlename>Middle Name:</lable>
+                <input type="text" id="middlename" name="middlename" placeholder="Sadock" required minlength="3">
+                <lable for="Surname">Surname:</lable>
+                <input type="text" id="surname" name="surname" placeholder="Sama" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required
+                    autocomplete="email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+255700000000" pattern="^\+?[0-9]{10,13}"
+                    required>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h4>Account Details</h4>
+                </legend>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="12">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="8"
+                    maxlength="20">
+
+                <label for="role">Select Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">Please choose</option>
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="admin">Administrator</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h4>Additional Information</h4>
+                </legend>
+
+                <label for="bio"></label>
+                <textarea id="bio" name="bio" rows="5" cols="50" placeholder="Tell us about yourself..."></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe" unchecked> Subscribe to newsletter
+                </label>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="profile-pic">Upload Profile Picture:</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            </fieldset>
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+                <button type="reset" class="button-cancel">Cancel</button>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Obadiah. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

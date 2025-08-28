@@ -1,0 +1,119 @@
+         body {
+             font-family: Arial, sans-serif;
+             margin: 20px;
+             line-height: 1.6;
+             background-color: #f9f9f9;
+         }
+
+         .site-header {
+             font-size: 16px;
+             text-align: center;
+             background: #efecec;
+             padding: 20;
+             border-bottom: 2px solid #ccc;
+         }
+
+         .site-header h1 {
+             color: rgb(236, 110, 13);
+             text-align: center;
+
+         }
+
+         .site-header nav a {
+             color: #333;
+             margin: 10px;
+             text-decoration: none;
+
+         }
+
+         .site-header nav a:hover {
+             text-decoration: underline;
+             Text-align: center;
+         }
+
+         .site-header nav label {
+             width: 20%;
+         }
+
+         .site-header nav input {
+             width: 20%;
+             position: absolute;
+             right: 100px;
+
+         }
+
+         .site-header nav button {
+             width: 5%;
+             position: absolute;
+             right: 25px;
+             color: #efecec;
+             background: #0288e8;
+             border: none;
+             cursor: pointer;
+             padding: 10px;
+             border-radius: 6px;
+         }
+
+         section {
+             background: #fff;
+             margin: 20px auto;
+             padding: 20px;
+             border: 2px solid #ddd;
+             border-radius: 8px;
+         }
+
+
+         table {
+             border-collapse: collapse;
+             width: 100%;
+             text-align: left;
+         }
+
+         table,
+         th,
+         td {
+             border: 1px solid #0c0000;
+         }
+
+         th,
+         td {
+             padding: 8px;
+             text-align: left;
+         }
+
+         fieldset {
+             margin-bottom: 2rem;
+             border: 2px solid #0288e8;
+             border-radius: 4px;
+             width: 97%;
+             padding: 15px;
+         }
+
+         button {
+             color: #efecec;
+             background: #0288e8;
+             border: none;
+             cursor: pointer;
+             padding: 10px 15px;
+             border-radius: 6px;
+         }
+
+         .button-cancel {
+             background: #555;
+         }
+
+
+         label {
+             display: block;
+             margin-top: 10px;
+         }
+
+         input,
+         textarea,
+         select {
+             padding: 8px;
+             margin-top: 4px;
+             box-sizing: border-box;
+             border-radius: 6px;
+             width: 100%;
+         }
